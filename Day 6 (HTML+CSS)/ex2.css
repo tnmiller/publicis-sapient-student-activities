@@ -38,11 +38,11 @@
 }
 
 .div5 {
-    height: 550px;
-    width: 1030px;
+    height: 500px;
+    width: 1010px;
     position:absolute;
-    top: 120;
-    left: 205;
+    top: 140;
+    left: 215;
     border: solid;
     border-width: 3px;
     border-color: red;
