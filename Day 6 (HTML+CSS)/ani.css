@@ -1,0 +1,14 @@
+.circle{
+    width:100px;
+    height: 100px;
+    border: 3px solid black;
+    animation: change 5s alternate infinite;
+}
+
+@keyframes change{
+    0%{background-color: yellow;}
+    25%{background-color: yellowgreen;}
+    50%{background-color: greenyellow;}
+    75%{background-color: blueviolet;}
+    100%{background-color: blue;}
+}
