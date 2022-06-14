@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>Exercise 1 Form</title>
+    <style>
+        table {
+          border-spacing: 10px;
+        }
+        </style>
+</head>
+<h1>Exercise 1 Form</h1>
+<table>
+    <form>
+        <tr>
+            <td>Name <input type="text" name="n1" /></td>
+        </tr>
+        <tr>
+            <td>Password <input type="password" name="n2" /></td>
+        </tr>
+        <tr>
+            <td>Gender
+                <input type="radio" name="gender" value="male"> Female
+                <input type="radio" name="gender" value="female"> Male
+                <input type="radio" name="gender" value="female"> Other
+            </td>
+        </tr>
+        <tr>
+            <td>Skills
+                <input type="checkbox" name="skills" value="C"> C
+                <input type="checkbox" name="skills" value="Java"> Java
+                <input type="checkbox" name="skills" value="JS"> JS
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="qual">Qualification</label>
+                <select id="qual" name="qual">
+                    <option value="eng">Engineer</option>
+                    <option value="pm">Product Manager</option>
+                    <option value="mark">Marketing</option>
+                    <option value="pop">People OPs</option>
+                    <option value="other">Other</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Date of Birth <input type=date id=n5/>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <input type="submit" value="Register"/>
+            </td>
+            <td>
+                <input type="reset" value="Reset"/>
+            </td>
+        </tr>
+    </form>
+</table>
+
+</body>
+
+</html>
