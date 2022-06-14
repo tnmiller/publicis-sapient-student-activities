@@ -1,0 +1,49 @@
+.div1 {
+    height: 100px;
+    width: 1420px;
+    border: solid;
+    border-color: red;
+    border-width: 3px;
+  }
+
+.div2 {
+    height: 100px;
+    width: 1420px;
+    position:absolute;
+    top: 680;
+    border: solid;
+    border-width: 3px;
+    border-color: red;
+}
+
+.div3 {
+    height: 550px;
+    width: 180px;
+    position:absolute;
+    top: 120;
+    border: solid;
+    border-width: 3px;
+    border-color: red;
+}
+
+.div4 {
+    height: 550px;
+    width: 180px;
+    position:absolute;
+    top: 120;
+    left: 1250;
+    border: solid;
+    border-width: 3px;
+    border-color: red;
+}
+
+.div5 {
+    height: 550px;
+    width: 1030px;
+    position:absolute;
+    top: 120;
+    left: 205;
+    border: solid;
+    border-width: 3px;
+    border-color: red;
+}
