@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <title>Exercise 1 Form</title>
+    <style>
+        table {
+          border-spacing: 10px;
+        }
+        </style>
+</head>
+<h1>Exercise 1 Form</h1>
+<table>
+    <form name="login" onsubmit="return handleSubmit()">
+        <tr>
+            <td>First Name </td><td><input type="text" name="n1" /></td>
+        </tr>
+        <tr>
+            <td>Last Name </td><td><input type="text" name="n12" /></td>
+        </tr>
+        <tr>
+            <td>Password </td><td><input type="password" name="n2" /></td>
+        </tr>
+        <tr>
+            <td>Confirm Password </td><td><input type="password" name="n22" /></td>
+        </tr>
+        <tr>
+            <td>Gender</td><td>
+                <input type="radio" name="gender" id="female"> Female
+                <input type="radio" name="gender" id="male"> Male
+                <input type="radio" name="gender" id="other"> Other
+            </td>
+        </tr>
+        <tr>
+            <td>Skills</td><td>
+                <input type="checkbox" name="skills" id="C"> C
+                <input type="checkbox" name="skills" id="Java"> Java
+                <input type="checkbox" name="skills" id="C++"> C++
+            </td>
+        </tr>
+       
+    </table>
+    <table>
+        <tr>
+            <td>
+                <input type="submit" value="Register"/>
+            </td>
+            <td>
+                <input type="reset" value="Reset"/>
+            </td>
+        </tr>
+    </form>
+</table>
+<script type="text/javascript">
+    function handleSubmit(){
+        let loginForm=document.login;
+        let fname = loginForm.n1;
+        let lname = loginForm.n12;
+        let pass1 = loginForm.n2;
+        let pass2 = loginForm.n22;
+        if(fname.value.length<3){
+            alert('First name is too short');
+            return false;
+        }
+        if(lname.value.length<2){
+            alert('Last name is too short');
+            return false;
+        }
+        if(pass1.value.length == 0 || pass2.value.length==0){
+            alert('Please enter a password');
+            return false;
+        }
+        if(pass1.value!=pass2.value){
+            alert('Passwords do not match.');
+            return false;
+        }
+        if(!document.getElementById('female').checked&&!document.getElementById('male').checked&&!document.getElementById('other').checked){
+            alert('Please select a gender');
+            return false;
+        }
+        if(!document.getElementById('C').checked&&!document.getElementById('Java').checked&&!document.getElementById('C++').checked){
+            alert('Please select a skill');
+            return false;
+        }
+        return true;
+    }
+</script>
+</body>
+
+</html>

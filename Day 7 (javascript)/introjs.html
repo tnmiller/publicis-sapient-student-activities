@@ -26,6 +26,22 @@
              }
              let user2 = new Person('Sarah', 30);
              document.write('<p>Name = '+user2.name+', Age = '+user2.age+'</p>');
+</script>
+        <h2>Events</h2>
+        <input type="text" id="i1">
+        <br/>
+         <button onclick = "handleClick(event)">My button</button>
+         <p onclick="handleClick(event)">My paragraph</p>
+         <div id="i2">Name is: </div>
+         <script type="text/javascript">
+            function handleClick(e){
+                console.log(e);
+                console.log(e.target);
+                let ele=document.getElementById("i1");
+                console.log(ele.value);
+                let ele2 = document.getElementById("i2");
+                ele2.innerHTML = ele2.innerHTML+ele.value;
+            }
          </script>
     </body>
 </html>
