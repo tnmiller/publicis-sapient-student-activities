@@ -1,0 +1,25 @@
+<html lang="en">
+
+<head>
+    <title>Chess Board</title>
+</head>
+
+<body>
+    <canvas id="c1" style="border:2px solid black" width="800" height="800"></canvas>
+    <script type="text/javascript">
+        let ctx = document.getElementById('c1').getContext('2d');
+        for(var i=0; i<8; i++){
+            for(var j=0; j<8; j++){
+            ctx.fillStyle='black';
+            if(j%2==0&&i%2==0){
+                ctx.fillRect(100*j,100*i,100,100);
+            }
+            else if(j%2==0){
+                ctx.fillRect(100*j+100, 100*i, 100,100);
+            }
+            }
+        }
+    </script>
+</body>
+
+</html>
