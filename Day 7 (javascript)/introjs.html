@@ -1,0 +1,31 @@
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+
+    <body>
+        <h1>Javascript demo variables</h1>
+        <script type="text/javascript">
+            for(var v=0; v<10; v++){
+                var x=2;
+                if((v%x)==0){
+                    document.write('<p>v= '+v+'</p>');
+                }
+            }
+            document.write('<p>value of x: '+x+'</p>');
+        </script>
+         <h1>Javascript demo object</h1>
+         <script type="text/javascript">
+             //literal style object
+             let user = {name:"Alex", age:25};
+             document.write('<p>Name = '+user.name+', Age = '+user.age+'</p>');
+             //function style
+             function Person(name, age){
+                this.name = name;
+                this.age = age;
+             }
+             let user2 = new Person('Sarah', 30);
+             document.write('<p>Name = '+user2.name+', Age = '+user2.age+'</p>');
+         </script>
+    </body>
+</html>
