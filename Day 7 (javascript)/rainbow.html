@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <title>Rainbow</title>
+</head>
+
+<body>
+    <canvas id="c1" style="border:2px solid black" width="800" height="800"></canvas>
+    <script type="text/javascript">
+        let ctx = document.getElementById('c1').getContext('2d');
+        for(var i=0; i<8; i++){
+           if(i==0){
+            ctx.fillStyle = 'red';
+           }
+           else if(i==1){
+            ctx.fillStyle = 'orange';
+           }
+           else if(i==2){
+            ctx.fillStyle = 'yellow';
+           }
+           else if(i==3){
+            ctx.fillStyle = 'green';
+           }
+           else if(i==4){
+            ctx.fillStyle = 'blue';
+           }
+           else if(i==5){
+            ctx.fillStyle = 'indigo';
+           }
+           else if(i==6){
+            ctx.fillStyle = 'violet';
+           }
+           else if(i==7){
+            ctx.fillStyle = 'white';
+           }
+        ctx.beginPath();
+        ctx.arc(400, 450, 300-(i*18), 0, Math.PI, true);
+        ctx.fill();
+        }
+    </script>
+</body>
+
+</html>
